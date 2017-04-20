@@ -1,3 +1,4 @@
+// import './blog.scss';
 import { autobind } from 'core-decorators';
 
 @autobind()

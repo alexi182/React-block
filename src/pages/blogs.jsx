@@ -41,7 +41,7 @@ export default class BlogsPage extends React.Component {
 
         blogs.push(blog);
 
-        
+
         this.setState({
             blogs
         });

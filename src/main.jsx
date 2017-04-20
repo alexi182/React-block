@@ -1,4 +1,5 @@
 import './vendors';
+import './components/blog.scss';
 import { Router, Route, browserHistory } from 'react-router';
 
 import MainLayout from './layouts/main';
