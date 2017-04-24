@@ -2,10 +2,10 @@ import './vendors';
 import './components/blog.scss';
 import { Router, Route, browserHistory } from 'react-router';
 
-import MainLayout from './layouts/main';
-import IndexPage from './pages/index';
-import BlogsPage from './pages/blogs';
-import UsersPage from './pages/users';
+import MainLayout from './layouts/layout';
+import IndexPage from './pages/indexPage';
+import BlogsPage from './pages/blogsPage';
+import UsersPage from './pages/usersPage';
 
 let app = document.getElementById('app');
 

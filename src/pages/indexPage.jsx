@@ -6,8 +6,7 @@ export default class IndexPage extends React.Component {
     render() {
         return (
             <div>
-                <h2>Hello2</h2>
-                <button class="btn btn-primary">давай</button>
+                <h2>Главная страница</h2>
             </div>
         );
     }

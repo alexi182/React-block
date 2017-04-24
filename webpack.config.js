@@ -33,25 +33,17 @@ module.exports = {
          test: /\.html$/,
          loader: 'html-loader'
       },
-          /*  {
-           test: /\.css$/,
-           loader: 'style-loader!css-loader'
-           },
-           */
+         {
+            test: /\.scss$/,
+            use: ExtractTextPlugin.extract ({
+               fallback: 'style-loader',
+               use: ['css-loader', 'sass-loader']
+            })
+         },
          {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract({
-               fallbackLoader: 'style-loader',
-               loader: ['css-loader']
-            }),
-         }, {
-            test: /\.scss$/,
-            loader: ExtractTextPlugin.extract({
-               fallbackLoader: 'style-loader',
-               loader: ['css-loader', 'sass-loader', 'resolve-url-loader']
-            }),
+            loader: 'style-loader!css-loader'
          },
-
          {
             test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
             use: [{
