@@ -1,5 +1,5 @@
 import Menu from '../components/menu';
-import MenuItem from '../components/menuItem';
+/*import MenuItem from '../components/menuItem';*/
 
 export default class MainLayout extends React.Component {
    constructor(props) {
@@ -23,11 +23,11 @@ export default class MainLayout extends React.Component {
                           </a>
                       </div>
                       <div id="navbar" class="collapse navbar-collapse">
-                          <Menu>
-                              <MenuItem href="/">Main</MenuItem>
+                          <Menu/>
+                              {/*<MenuItem href="/">Main</MenuItem>
                               <MenuItem href="/blogs">Blogs</MenuItem>
-                              <MenuItem href="/users">Users</MenuItem>
-                          </Menu>
+                              <MenuItem href="/users">Users</MenuItem>*/}
+                          {/*</Menu>*/}
                       </div>
                   </div>
               </nav>

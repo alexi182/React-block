@@ -1,3 +1,4 @@
+/*
 import { Link } from 'react-router';
 
 export default class MenuItem extends React.Component {
@@ -12,4 +13,4 @@ export default class MenuItem extends React.Component {
             </li>
         );
     }
-}
+}*/

@@ -1,5 +1,4 @@
 import { autobind } from 'core-decorators';
-
 import BlogList from '../components/blogList';
 
 @autobind()
@@ -8,6 +7,8 @@ export default class BlogsPage extends React.Component {
       super(props);
 
       this.url = 'https://jsonplaceholder.typicode.com/posts/';
+
+     /* const data = require('../data.json');*/
 
       this.state = { //initial state
          blogs: []
@@ -71,14 +72,13 @@ export default class BlogsPage extends React.Component {
    // }
 
    // componentDidUpdate() {
-
    // }
 
    render() {
       return (
           <div>
-              <h2 class="text-center">Blogs</h2>
-              <BlogList like={this.like} dislike={this.dislike} add={this.add} blogs={this.state.blogs} />
+             <h2>Blogs</h2>
+             <BlogList like={this.like} dislike={this.dislike} add={this.add} blogs={this.state.blogs} />
           </div>
       );
    }

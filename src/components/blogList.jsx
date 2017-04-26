@@ -13,15 +13,15 @@ export default class BlogList extends React.Component {
 
       this.props.add({ body, title });
 
-      this.refs.body.value = '';
-      this.refs.title.value = '';
+      this.refs.body.value = ''; // значения полей при появлении
+      this.refs.title.value = ''; // значения полей при появлении
    }
 
    render() {
       let blogs = this.props.blogs.map((blog, index) =>
-          <Blog like={this.props.like}
-                dislike={this.props.dislike}
-                {...blog} key={index} />
+          <Blog like={ this.props.like }
+                dislike={ this.props.dislike }
+                { ...blog } key={ index } />
       );
       return (
           <div>
@@ -42,7 +42,7 @@ export default class BlogList extends React.Component {
                          <input ref="body" placeholder="Message Body" type="text" class="form-control"/>
                       </div>
                       <div>
-                         <button type="button" class="btn btn-block btn-success" onClick={this.addBlog}>Add Blog</button>
+                         <button type="button" class="btn btn-block btn-success" onClick={ this.addBlog }>Add Blog</button>
                       </div>
                    </form>
                 </div>

@@ -1,0 +1,14 @@
+[
+  {
+    "href": "/",
+    "title": "Main"
+  },
+  {
+    "href": "/blogs",
+    "title": "Blogs"
+  },
+  {
+    "href": "/users",
+    "title": "Users"
+  }
+]
